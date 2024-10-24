@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Cuisine</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sessão do Banner -->
+    <section class="slider bg">
+        <div class="slides ">
+            <!-- Slide 1: Primeiro banner -->
+            <div class="slide">
+                <div class="pizza-banner">
+                    <img src="img/pizza_figma-removebg-preview.png" alt="Pizza 1" class="pizza-image">
+                    <div class="content">
+                        <h1><span class="highlight">Delicious</span><br>ITALIAN CUISINE</h1>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regalia.
+                        </p>
+                        <button class="order-now">Order Now</button>
+                        <button class="view-menu">View Menu</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Segundo banner -->
+            <div class="slide">
+                <div class="pizza-banner">
+                    <img src="img/pizza_figma2-removebg-preview.png" alt="Pizza 2" class="pizza-image">
+                    <div class="content">
+                        <h1><span class="highlight">Crunchy</span><br>ITALIAN CUISINE</h1>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regalia.
+                        </p>
+                        <button class="order-now">Order Now</button>
+                        <button class="view-menu">View Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+        </div>
+    </section>
+    <!-- Sessão de Produtos -->
+    <section class="pizza-section">
+        <h2>HOT PIZZA MEALS</h2>
+        <img src="img/carrinho-removebg-preview.png" alt="" class="carrinho" id="verCarrinho"
+            onclick="mostrarCarrinho()">
+        <div class="pizza-grid">
+            <div class="pizza-card">
+                <img src="img/pizza2_menu-removebg-preview.png" alt="Italian Pizza">
+                <div class="pizza-info">
+                    <h3>Italian Pizza</h3>
+                    <p>Pizza calabresa</p>
+                    <span class="price">$2.00</span>
+                    <button class="adicionarCarrinho" onclick="adicionar(`pizza Calabresa`,2)">Order</button>
+                </div>
+            </div>
+            <div class="pizza-card">
+                <img src="img/pizza1_menu-removebg-preview.png" alt="Italian Pizza">
+                <div class="pizza-info">
+                    <h3>Italian Pizza</h3>
+                    <p>Pizza Queijo</p>
+                    <span class="price">$2.00</span>
+                    <button class="adicionarCarrinho" onclick="adicionar(`pizza Queijo`,2)">Order</button>
+                </div>
+            </div>
+            <div class="pizza-card">
+                <img src="img/pizza2_menu-removebg-preview.png" alt="Italian Pizza">
+                <div class="pizza-info">
+                    <h3>Italian Pizza</h3>
+                    <p>Pizza Calabresa 2</p>
+                    <span class="price">$2.00</span>
+                    <button class="adicionarCarrinho" onclick="adicionar(`pizza Calabresa`,2)">Order</button>
+                </div>
+            </div>
+            <div class="pizza-card">
+                <img src="img/pizza1_menu-removebg-preview.png" alt="Italian Pizza">
+                <div class="pizza-info">
+                    <h3>Italian Pizza</h3>
+                    <p>Pizza Queijo 2</p>
+                    <span class="price">$2.00</span>
+                    <button class="adicionarCarrinho" onclick="adicionar(`pizza Queijo 2`,2)">Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
